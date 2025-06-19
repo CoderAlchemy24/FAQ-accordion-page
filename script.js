@@ -1,4 +1,4 @@
-let icons = document.getElementsByClassName('icon');
+const icons = document.getElementsByClassName('icon');
 
 
 const clickHandler = (e) => {
