@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'WorkSans-Regular';
+    src: url('./assets/fonts/static/WorkSans-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal
+    ;
+}
+
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    src: url('./assets/fonts/static/WorkSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal
+    ;
+}
+
+@font-face {
+    font-family: 'WorkSans-Bold';
+    src: url('./assets/fonts/static/WorkSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal
+    ;
+}
+
+
+:root {
+   --color-white: hsl(0, 100%, 100%);
+   --color-purple-100: hsl(275, 100%, 97%);
+   --color-purple-600: hsl(292, 16%, 49%);
+   --color-purple-950: hsl(292, 42%, 14%);
+  
+   --spacing-100: 8px;
+   --spacing-200: 16px;
+   --spacing-300: 24px;
+   --spacing-400: 32px;
+   --spacing-500: 40px;
+
+   --font-family-preset-1:"WorkSans-Bold", "sans-serif";
+   --font-family-preset-2: "WorkSans-SemiBold", "sans-serif";
+   --font-family-preset-3: "WorkSans-Regular", "sans-serif";
+
+    --font-size-preset-1:56px;
+    --font-size-preset-2:18px;
+    --font-size-preset-3:16px;
+
+    --line-height-preset-1: 66px;
+    --line-height-preset-2: 21px;
+    --line-height-preset-3: 24px;
+
+    --letter-spacing-preset-1: 0%;
+    --letter-spacing-preset-2: 0%;
+    --letter-spacing-preset-3: 0%;
+}
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/images/background-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--color-purple-100);
+}
+
+
+main{
+    background: transparent;
+    width: 37.5rem;
+
+    margin-top: 8rem;
+}
+
+section{
+     background-color: var(--color-white);
+
+    border-radius: 1rem;
+    padding: var(--spacing-400);;
+
+    box-shadow: 5px 5px 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+header{
+    
+    text-align: left;
+
+    font-family: var(--font-family-preset-1);
+    font-size: var(--font-size-preset-1);
+    line-height: var(--line-height-preset-1);
+    letter-spacing: var(--letter-spacing-preset-1);
+    color: var(--color-purple-950);
+}
+
+h1{
+    display: inline-block;
+    text-align: left;
+    margin-top: var(--spacing-400);
+    margin-bottom: var(--spacing-500);
+}
+header img{
+    position: relative;
+    top:-6px;
+}
+
+dl{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:  flex-start;
+    gap: var(--spacing-300);
+
+    margin-top:  var(--spacing-200);
+}
+
+dt{
+    font-family: var(--font-family-preset-2);
+    font-size: var(--font-size-preset-2);
+    line-height: var(--line-height-preset-2);
+    letter-spacing: var(--letter-spacing-preset-2);
+    color: var(--color-purple-950);
+
+    width: 100%;
+
+    text-align: left;
+  
+
+    display: grid;
+    grid-template-columns: 9fr 1fr;
+}
+
+dt:hover{
+    color: purple;
+}
+
+.text{
+    text-align: left;
+    grid-column: 1 / 2;
+    display: inline;
+    align-content: flex-start;
+      margin-left: 0;
+
+    position: relative;
+    top:6px;;
+}
+
+.icon{
+   text-align: right;
+   grid-column: 2 / 3;
+    display: inline;
+
+ 
+}
+
+dd{
+    font-family: var(--font-family-preset-3);
+    font-size: var(--font-size-preset-3);
+    line-height: var(--line-height-preset-3);
+    letter-spacing: var(--letter-spacing-preset-3);
+    color: var(--color-purple-950);
+
+   display: none;
+}
+
+dd:hover{
+
+    color: var(--color-purple-600);
+}
+
+.icon{
+    position: relative;
+    top:2px;
+}
+
+.text{
+    text-align: left;
+}
+
+
+
+.visible{
+    display: block;
+}
+
+.not-visible{
+    display: none;
+}
+
+@media screen and (max-width:64rem) {
+    body{
+        background-size: contain
+    }
+
+    main{
+        width:  37.5rem;
+        margin-top: 8rem;
+    }
+}
+
+@media screen and (max-width:48rem) {
+
+body {
+     background-image: url(./assets/images/background-pattern-mobile.svg);
+}
+
+ main{
+    width: max(24rem, 72%);
+    padding: var(--spacing-300);
+    margin-top: 8rem;
+}
+
+ header{
+    font-size: 2rem;
+    flex-wrap: nowrap;
+ }
+
+ header img{
+    position: relative;
+    top: 4px;
+ }
+
+
+.text{
+    font-size: 1rem;
+}
+
+dd{
+    font-size: 0.875rem;
+}
+}
