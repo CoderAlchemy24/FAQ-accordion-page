@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/CoderAlchemy24/FAQ-accordion-page.git](https://github.com/CoderAlchemy24/FAQ-accordion-page.git)
+- Live Site URL: [https://boisterous-kataifi-a7b140.netlify.app/](https://boisterous-kataifi-a7b140.netlify.app/)
 
 
 
