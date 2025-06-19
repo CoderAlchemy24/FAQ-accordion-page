@@ -12,10 +12,12 @@ const clickHandler = (e) => {
       if (iconImg) {
         if (dd.classList.contains('visible')) {
             
-          iconImg.setAttribute('src','./assets/images/icon-minus.svg'); 
+          iconImg.setAttribute('src','./assets/images/icon-minus.svg');
+          iconImg.setAttribute('alt','icon-minus'); 
           
         } else {
           iconImg.setAttribute('src','./assets/images/icon-plus.svg'); 
+          iconImg.setAttribute('alt','icon-plus'); 
          
         }
       }
